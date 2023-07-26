@@ -3,7 +3,7 @@
 {% block content %}
     <div>
         <h1 CLASS="text-info text-center">Paying for {{ product.name }}</h1>
-        <form class="product-form" method="post"  action="">
+        <form class="product-form" method="post" action="">
             <p>{{ success }}</p>
             {% csrf_token %}
             <input required readonly class="form-control" value="{{ product.price }}" name="p-price" type="text">
